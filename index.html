@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Açaí Urbano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #5b0e5c;
+            padding: 20px;
+            color: white;
+        }
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .produto {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+        .produto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .produto button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #5b0e5c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .produto button:hover {
+            background-color: #7b1382;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Açaí Urbano</h1>
+        <p>Escolha seu açaí favorito e monte seu pedido</p>
+    </header>
+    <div class="produtos">
+        <div class="produto">
+            <img src="images/placeholder.webp" alt="Açaí 300ml">
+            <p>Açaí 300ml</p>
+            <button onclick="location.href='pedido.html?produto=Açaí 300ml'">Pedir</button>
+        </div>
+        <div class="produto">
+            <img src="images/placeholder.webp" alt="Açaí 500ml">
+            <p>Açaí 500ml</p>
+            <button onclick="location.href='pedido.html?produto=Açaí 500ml'">Pedir</button>
+        </div>
+    </div>
+</body>
+</html>
