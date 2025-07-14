@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Montar Pedido</title>
+</head>
+<body>
+    <h1>Seu Pedido 🍧</h1>
+    <div id="infoProduto"></div>
+    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const produto = params.get('produto');
+        document.getElementById('infoProduto').innerText = 'Você escolheu: ' + decodeURIComponent(produto);
+
+        function finalizarPedido() {
+            // Link de pagamento simulado
+            window.location.href = 'https://mpago.la/2g1x7fW';
+        }
+    </script>
+</body>
+</html>
