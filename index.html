@@ -31,7 +31,7 @@
       justify-content: center;
       align-items: center;
     }
-    .info, .menu, .avaliacoes {
+    .info, .menu, .avaliacoes, .urgencia {
       padding: 20px;
       text-align: center;
     }
@@ -76,6 +76,25 @@
       text-decoration: line-through;
       margin-right: 8px;
     }
+    .btn-comprar {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #d80000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .urgencia {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 400px;
+      font-size: 18px;
+    }
     .avaliacoes {
       margin-top: 40px;
       font-size: 14px;
@@ -85,7 +104,19 @@
       padding: 20px;
     }
     .avaliacoes .review {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 6px;
       margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .avaliacoes .review img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
     }
     footer {
       background: #000;
@@ -119,12 +150,17 @@
     </div>
   </section>
 
+  <section class="urgencia">
+    ⚠️ Promoção por tempo limitado! Termina em <span id="contador">20:00</span> minutos!
+  </section>
+
   <section class="menu">
     <div class="card">
       <img src="images/combo1.webp" alt="Combo Kumo">
       <h2>Combo Kumo — 24 peças</h2>
       <p>Sashimi: 5 Salmão gomayaki, 5 Atum gomayaki<br>Nigiri: 4 Aburi salmão, 3 Skin, 3 Jow<br>Uramaki: 4 Ebitem</p>
       <p class="preco"><span class="original">R$ 49,90</span> R$ 29,90</p>
+      <a href="#" class="btn-comprar">Comprar agora</a>
     </div>
 
     <div class="card">
@@ -132,6 +168,7 @@
       <h2>Combo Takashi — 32 peças</h2>
       <p>Sashimi: 4 Salmão, 4 Atum, 4 Peixe branco<br>Nigiri: 2 Atum, 2 Salmão, 2 Jow, 2 Peixe branco<br>Uramaki: 4 Califórnia, 4 Filadélfia, 4 Romeu e Julieta</p>
       <p class="preco"><span class="original">R$ 59,90</span> R$ 39,90</p>
+      <a href="#" class="btn-comprar">Comprar agora</a>
     </div>
 
     <div class="card">
@@ -139,6 +176,7 @@
       <h2>Combo Hikari — 78 peças</h2>
       <p>Sashimi: 10 Salmão, 10 Peixe branco, 10 Polvo, 10 Atum<br>Niguiri: 2 Salmão, 2 Atum, 2 Peixe, 2 Camarão, 2 Branco, 2 Polvo<br>Uramaki: 4 Filadélfia, 4 Romeu e Julieta, 4 Califórnia, 4 Skin, 4 Jow<br>Hossomaki: 4 Shake Maki, 4 Teka Maki</p>
       <p class="preco"><span class="original">R$ 89,90</span> R$ 59,90</p>
+      <a href="#" class="btn-comprar">Comprar agora</a>
     </div>
 
     <div class="card">
@@ -146,23 +184,37 @@
       <h2>Combo Senshi — 28 peças</h2>
       <p>Sashimi: 4 Salmão Black, 4 Polvo, 4 Tilápia<br>Uramaki: 4 Ebitem, 4 Filadélfia<br>Sushi: 4 Ken Taki<br>Especiais: 2 Ebi Jou, 2 Tako Jow</p>
       <p class="preco"><span class="original">R$ 179,90</span> R$ 149,90</p>
+      <a href="#" class="btn-comprar">Comprar agora</a>
     </div>
   </section>
 
   <section class="avaliacoes">
     <h2>O que estão dizendo</h2>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Perfeito! Chegou quentinho e bem embalado."</div>
-    <div class="review">⭐️⭐️⭐️⭐️ "Sabor maravilhoso. Voltarei a pedir com certeza."</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Combo bem servido e fresco. Amei!"</div>
-    <div class="review">⭐️⭐️⭐️⭐️ "Entrega rápida e tudo bem montado."</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Muito completo, vale cada centavo!"</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Melhor combo que já pedi!"</div>
-    <div class="review">⭐️⭐️⭐️⭐️⭐️ "Sensacional, super sofisticado!"</div>
-    <div class="review">⭐️⭐️⭐️⭐️ "Achei caro, mas muito bem feito."</div>
+    <div class="review"><img src="images/avatar1.webp" alt="cliente 1"> ⭐️⭐️⭐️⭐️⭐️ "Perfeito! Chegou quentinho e bem embalado."</div>
+    <div class="review"><img src="images/avatar2.webp" alt="cliente 2"> ⭐️⭐️⭐️⭐️ "Sabor maravilhoso. Voltarei a pedir com certeza."</div>
+    <div class="review"><img src="images/avatar3.webp" alt="cliente 3"> ⭐️⭐️⭐️⭐️⭐️ "Combo bem servido e fresco. Amei!"</div>
+    <div class="review"><img src="images/avatar4.webp" alt="cliente 4"> ⭐️⭐️⭐️⭐️ "Entrega rápida e tudo bem montado."</div>
+    <div class="review"><img src="images/avatar5.webp" alt="cliente 5"> ⭐️⭐️⭐️⭐️⭐️ "Muito completo, vale cada centavo!"</div>
+    <div class="review"><img src="images/avatar6.webp" alt="cliente 6"> ⭐️⭐️⭐️⭐️⭐️ "Melhor combo que já pedi!"</div>
+    <div class="review"><img src="images/avatar7.webp" alt="cliente 7"> ⭐️⭐️⭐️⭐️⭐️ "Sensacional, super sofisticado!"</div>
+    <div class="review"><img src="images/avatar8.webp" alt="cliente 8"> ⭐️⭐️⭐️⭐️ "Achei caro, mas muito bem feito."</div>
   </section>
 
   <footer>
     © 2025 Hokkai Delivery
   </footer>
+
+  <script>
+    // Contador de 20 minutos
+    let tempoRestante = 20 * 60;
+    const contador = document.getElementById('contador');
+    const intervalo = setInterval(() => {
+      const minutos = String(Math.floor(tempoRestante / 60)).padStart(2, '0');
+      const segundos = String(tempoRestante % 60).padStart(2, '0');
+      contador.textContent = `${minutos}:${segundos}`;
+      tempoRestante--;
+      if (tempoRestante < 0) clearInterval(intervalo);
+    }, 1000);
+  </script>
 </body>
 </html>
