@@ -1,68 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Açaí Urbano</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #5b0e5c;
-            padding: 20px;
-            color: white;
-        }
-        .produtos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
-        }
-        .produto {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            width: 200px;
-            padding: 10px;
-        }
-        .produto img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .produto button {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #5b0e5c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .produto button:hover {
-            background-color: #7b1382;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="PROMOÇÃO INAUGURAÇÃO - Hokkai Culinária Japonesa. Acesse e peça agora pelo delivery food!">
+  <title>Hokkai Delivery - Culinária Japonesa - Faça seu pedido!</title>
+  <link rel="shortcut icon" href="images/logo.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 160px;
+    }
+    .cover {
+      background: url('images/background.webp') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .info {
+      padding: 20px;
+      text-align: center;
+    }
+    .info h1 {
+      margin: 10px 0;
+      font-size: 24px;
+      color: #000;
+    }
+    .detalhe span {
+      display: inline-block;
+      margin: 5px;
+      color: #000;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Açaí Urbano</h1>
-        <p>Escolha seu açaí favorito e monte seu pedido</p>
-    </header>
-    <div class="produtos">
-        <div class="produto">
-            <img src="images/copo2.webp" alt="Açaí 300ml">
-            <p>Açaí 300ml</p>
-            <button onclick="location.href='pedido.html?produto=Açaí 300ml'">Pedir</button>
-        </div>
-        <div class="produto">
-            <img src="images/zero1.webp" alt="Açaí 500ml">
-            <p>Açaí 500ml</p>
-            <button onclick="location.href='pedido.html?produto=Açaí 500ml'">Pedir</button>
-        </div>
+  <header>
+    <div class="cover">
+      <img src="images/logo.webp" alt="Hokkai Delivery">
     </div>
+  </header>
+
+  <section class="info">
+    <h1>Hokkai - Culinária Japonesa</h1>
+    <div class="detalhe">
+      <span>Pedido Mínimo: <b>R$ 13,00</b></span>
+      <span>Entrega: <b>25-40 min</b> • <span style="color:#077c22">Grátis</span></span>
+      <span>Local: Goiânia - Goiás</span>
+    </div>
+    <div class="detalhe">
+      <span>Avaliação: <b>4,8</b> (1.589)</span>
+      <span style="color: #d80000;">Super</span>
+    </div>
+    <div class="detalhe">
+      <span>Ótimo atendimento</span>
+      <span>Melhores preços</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Hokkai Delivery
+  </footer>
+
+  <!-- PIXEL PLACEHOLDER
+  <script>
+    // Cole seu pixel aqui, exemplo:
+    // fbq('init', 'PIXEL_ID');
+    // fbq('track', 'PageView');
+  </script>
+  -->
 </body>
 </html>
