@@ -31,7 +31,7 @@
       justify-content: center;
       align-items: center;
     }
-    .info {
+    .info, .menu {
       padding: 20px;
       text-align: center;
     }
@@ -44,6 +44,44 @@
       display: inline-block;
       margin: 5px;
       color: #000;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 500px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+    .card p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .preco {
+      color: #077c22;
+      font-weight: bold;
+    }
+    .avaliacoes {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #555;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .avaliacoes span {
+      display: block;
+      margin: 4px 0;
     }
     footer {
       background: #000;
@@ -77,16 +115,54 @@
     </div>
   </section>
 
+  <section class="menu">
+    <div class="card">
+      <img src="images/combo1.webp" alt="Combo Kumo">
+      <h2>Combo Kumo — 24 peças</h2>
+      <p>Sashimi: 5 Salmão gomayaki, 5 Atum gomayaki<br>Nigiri: 4 Aburi salmão, 3 Skin, 3 Jow<br>Uramaki: 4 Ebitem</p>
+      <p class="preco">R$ 29,90</p>
+      <div class="avaliacoes">
+        <span>⭐️⭐️⭐️⭐️⭐️ "Perfeito! Chegou quentinho e bem embalado."</span>
+        <span>⭐️⭐️⭐️⭐️ "Sabor maravilhoso. Voltarei a pedir com certeza."</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/combo2.webp" alt="Combo Takashi">
+      <h2>Combo Takashi — 32 peças</h2>
+      <p>Sashimi: 4 Salmão, 4 Atum, 4 Peixe branco<br>Nigiri: 2 Atum, 2 Salmão, 2 Jow, 2 Peixe branco<br>Uramaki: 4 Califórnia, 4 Filadélfia, 4 Romeu e Julieta</p>
+      <p class="preco">R$ 39,90</p>
+      <div class="avaliacoes">
+        <span>⭐️⭐️⭐️⭐️⭐️ "Combo bem servido e fresco. Amei!"</span>
+        <span>⭐️⭐️⭐️⭐️ "Entrega rápida e tudo bem montado."</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/combo3.webp" alt="Combo Hikari">
+      <h2>Combo Hikari — 78 peças</h2>
+      <p>Sashimi: 10 Salmão, 10 Peixe branco, 10 Polvo, 10 Atum<br>Niguiri: 2 Salmão, 2 Atum, 2 Peixe, 2 Camarão, 2 Branco, 2 Polvo<br>Uramaki: 4 Filadélfia, 4 Romeu e Julieta, 4 Califórnia, 4 Skin, 4 Jow<br>Hossomaki: 4 Shake Maki, 4 Teka Maki</p>
+      <p class="preco">R$ 59,90</p>
+      <div class="avaliacoes">
+        <span>⭐️⭐️⭐️⭐️⭐️ "Muito completo, vale cada centavo!"</span>
+        <span>⭐️⭐️⭐️⭐️⭐️ "Melhor combo que já pedi!"</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/combo4.webp" alt="Combo Senshi">
+      <h2>Combo Senshi — 28 peças</h2>
+      <p>Sashimi: 4 Salmão Black, 4 Polvo, 4 Tilápia<br>Uramaki: 4 Ebitem, 4 Filadélfia<br>Sushi: 4 Ken Taki<br>Especiais: 2 Ebi Jou, 2 Tako Jow</p>
+      <p class="preco">R$ 149,90</p>
+      <div class="avaliacoes">
+        <span>⭐️⭐️⭐️⭐️⭐️ "Sensacional, super sofisticado!"</span>
+        <span>⭐️⭐️⭐️⭐️ "Achei caro, mas muito bem feito."</span>
+      </div>
+    </div>
+  </section>
+
   <footer>
     © 2025 Hokkai Delivery
   </footer>
-
-  <!-- PIXEL PLACEHOLDER
-  <script>
-    // Cole seu pixel aqui, exemplo:
-    // fbq('init', 'PIXEL_ID');
-    // fbq('track', 'PageView');
-  </script>
-  -->
 </body>
 </html>
